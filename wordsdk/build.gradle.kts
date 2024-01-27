@@ -50,7 +50,7 @@ android {
 }
 
 dependencies {
-    implementation("com.koai:base:1.0.1")
+    implementation("com.koai:base:1.0.2")
 }
 
 
@@ -112,4 +112,3 @@ tasks.register("cleanBuildPublish"){
         assembleReleaseTask.finalizedBy("publishReleasePublicationToMavenRepository")
     }
 }
-
