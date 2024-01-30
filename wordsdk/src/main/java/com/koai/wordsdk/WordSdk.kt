@@ -19,8 +19,8 @@ object WordSdk {
         val textView = TextView(context)
         val layoutParams = GridLayout.LayoutParams()
         layoutParams.rightMargin = 14
-        layoutParams.height = context.resources.getDimensionPixelSize(com.intuit.sdp.R.dimen._32sdp)
-        layoutParams.width = context.resources.getDimensionPixelSize(com.intuit.sdp.R.dimen._32sdp)
+        layoutParams.height = 32
+        layoutParams.width = 32
         layoutParams.columnSpec = GridLayout.spec(GridLayout.UNDEFINED, 1f)
         layoutParams.setGravity(Gravity.CENTER)
         textView.layoutParams = layoutParams
