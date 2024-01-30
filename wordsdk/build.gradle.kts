@@ -50,7 +50,7 @@ android {
 }
 
 dependencies {
-    implementation("com.koai:base:1.0.2")
+    implementation("com.koai:base:1.0.4")
 }
 
 
