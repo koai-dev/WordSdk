@@ -8,6 +8,7 @@ import android.widget.GridLayout
 import android.widget.TextView
 
 object WordSdk {
+
     fun createWordView(
         context: Context,
         text: String,
@@ -17,10 +18,11 @@ object WordSdk {
         textColor: Int
     ): TextView {
         val textView = TextView(context)
+        val density = context.resources.displayMetrics.density
         val layoutParams = GridLayout.LayoutParams()
         layoutParams.rightMargin = 14
-        layoutParams.height = 32
-        layoutParams.width = 32
+        layoutParams.height = (32 * density).toInt()
+        layoutParams.width = (32 * density).toInt()
         layoutParams.columnSpec = GridLayout.spec(GridLayout.UNDEFINED, 1f)
         layoutParams.setGravity(Gravity.CENTER)
         textView.layoutParams = layoutParams
